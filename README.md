@@ -13,7 +13,9 @@ The project includes comprehensive text cleaning routines to remove noise, speci
 A TF-IDF vectorizer is used to convert text into numerical features that capture the importance of words within reviews.
 3) Machine Learning Models:
 Multiple classification models (including Random Forest, SVM, Logistic Regression, and XGBoost) are used. The final solution uses a combined pipeline (integrating the TF-IDF vectorizer with the sentiment classifier) for efficient predictions.
-4) Interactive Web App:
+4) Transformer Model:
+To further enhance performance, a state-of-the-art Transformer model called Hugging Face Transformer is integrated and fine-tuned.
+5) Interactive Web App:
 Built with Streamlit, the user-friendly web interface allows users to input a review and instantly see its predicted sentiment. It loads a pre-trained sentiment analysis model (sentiment_model.pkl) and its corresponding TF-IDF vectorizer (tfidf_vectorizer.pkl), both of which rely on scikit-learn (sklearn).
 
 This project provides a powerful yet accessible tool for analyzing customer reviews, enabling businesses to make data-driven decisions and improve overall customer satisfaction.
